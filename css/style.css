@@ -1,0 +1,242 @@
+ *{ 
+
+  font-family: "OpenSans";
+
+    } 
+  body{
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+   background-color: #fff;
+   width: 1200px;
+   margin: 50px auto;
+  
+  }
+  header .logo{
+    width: 200px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-image: url("img/logo.png");
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+
+  }
+  header h1{
+    vertical-align: middle;
+    display: inline-block;
+      font-size: 60px;
+    text-shadow: 2px 2px 0 rgba(0,20,0,0.5);
+    
+
+
+
+    }
+
+   
+    header nav a{
+      display: inline-block;
+      padding: 0 20px;
+      background-color: #555;
+      line-height: 40px;
+      color: #fff;
+        border-right: 1px solid #777;
+        text-decoration: none;
+    }
+    header nav{  
+    background-color:#555;
+         }
+        .div{
+
+
+        } 
+        main>table{
+          width: 100%;
+        border-collapse: collapse;
+        }
+        main .leftbar
+        {width: 200px;
+        background-color: #555;
+        color: white;
+    }
+
+    main .leftbar li a {  color: white;
+        text-decoration: none;}
+        main .content
+        {padding: 20px;
+           }
+
+           main .content, main .leftbar {
+            vertical-align: top;
+            padding: 20px;
+           }
+           .lesson li{margin-bottom: 10px;}
+        footer{
+          line-height: 50px;
+          background-color: #555;
+          text-align: center;
+          color: white;
+
+        }
+        .h11 {
+          text-align: center;
+        }
+    
+          .inst{
+            width: 40px;
+            vertical-align: middle;
+            float: right;
+            padding-top: 3px;
+        
+          }
+          .tg{
+               width: 35px;
+               vertical-align: middle;
+         float: right;
+         padding-top: 5px;
+
+          }
+        
+   .img{
+        
+        width: 180px;
+    
+     float: right;
+     
+       margin: 20px 10px 100px 20px;
+       border-radius: 100px;
+
+      }
+
+        .mail{text-align: right;
+          font-weight: bolder;
+          padding-right: 40px;}
+          .inst{
+            width: 40px;
+           
+            padding-right: 5px;
+            vertical-align: middle;
+
+          }
+
+          .content p{
+            text-indent: 20px;
+            text-align: justify;
+            padding: 5px;
+          }
+
+         
+          .layouts h1{
+            text-align:center;
+          }
+          .lay1{
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 450px;
+            height: 400px;
+             background-size: 450px 400px;
+            background-image: url(img/lay1.png);
+
+          }
+          .lay2{
+            display: inline-block;
+             width: 450px;
+            height: 400px;
+            background-repeat: no-repeat;
+            background-size: 450px 400px;
+            background-image: url(img/lay2.png);
+            float: right;
+          }
+             .lay3{
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 450px;
+            height: 400px;
+             background-size: 450px 400px;
+            background-image: url(img/maket3.png);
+          }
+              .lay4{
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 450px;
+            height: 400px;
+             background-size: 450px 400px;
+            background-image: url(img/lay4.png);
+          }
+          .layouts a{
+            display: block;
+            width: 100%;
+            height:100%;
+          }
+          .lay1:hover{
+            transition: all;
+            transform: scale(1.2);
+          }
+            .lay2:hover{
+            transition: all;
+            transform: scale(1.2);
+          }
+            .lay3:hover{
+            transition: all;
+            transform: scale(1.2);
+          }
+           .lay4:hover{
+            transition: all;
+            transform: scale(1.2);
+          }
+          nav a:hover{
+            transition: all;
+            transform: scale(1.1);
+            background-color: #000;
+
+          }
+          .lesson li a:hover{
+            display: block;
+            border:2px solid black;
+            border-radius: 5px;
+            background-color: #000;
+          }
+
+
+          .forms h1{
+            text-align: center;
+          }
+
+          .line{
+            padding-top: 20px;
+            border-bottom: 1px dashed #000;
+          }
+
+.hex {
+  display: inline-block;
+  margin: 20px 0;
+  width: 100px;
+  height: 60px;
+  background-color: #778899;
+  position: relative;
+  float: left;
+       }
+
+.hex:before {
+  content:  "";
+  width: 0; height: 0;
+  border-bottom: 30px solid red;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  position: absolute;
+  top: -30px;
+  display: block;
+}
+
+.hex:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -30px;
+  border-top: 30px solid  red;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  display: block;

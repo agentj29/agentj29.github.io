@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+.cards {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+ 
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border:1px solid black;
+  border-radius:15px;
+  width: 200px;
+  height: 250px;
+}
+
+.card:nth-of-type(1) {
+   
+  top: 0;
+  left: 350px;
+  right: 0;
+  bottom: 0;
+ background-image: url(images/king.jpg);
+ background-size: 200px 255px;
+ 
+ 
+}
+
+.card:nth-of-type(2) {
+ 
+  top: 100px;
+  left: 300px;
+  right: 0;
+  bottom: 0;
+  background-image: url(images/valet.jpg);
+ background-size: 200px 255px;
+ 
+}
+
+.card:nth-of-type(3) {
+ background-image: url(images/bubna.jpg);
+ background-size: 200px 255px;
+ 
+}
+
+.card:nth-of-type(4) {
+  
+  top: 100px;
+  left: 50px;
+  right: 0
+  bottom: 0;
+ background-image: url(images/chervy.jpg);
+ background-size: 200px 255px;
+}
+
+.card:nth-of-type(5) {
+    
+  top: 200px;
+  left: 170px;
+  right: 0;
+  bottom: 0;
+  background-image: url(images/bubnanine.jpg);
+ background-size: 200px 255px;
+}
+  
+ .back{
+  text-transform: uppercase;
+  position: fixed;
+  top: 95%;
+  line-height: 55px;
+ padding: 0 10px;
+border: 2px solid #ff3f40;
+display: inline-block;
+color: #ff3f40;
+ background-color: rgba(235, 56, 56, 0.5);
+border-radius: 6px;
+font-weight: bold;
+ }
+ .back a{
+  display: block;
+  font-family: arial;
+  text-decoration: none;
+color:#000;  }
+.back:hover{
+  background-color: #ff3f40;
+  color: white
+}
+
+
+	</style>
+</head>
+
+<body>
+    <div class="back"><a href="../css/layouts.html">Назад</a></div>
+
+	<div class="cards">
+  <div class="card">
+ 
+  </div>
+  <div class="card">
+ 
+
+  </div>
+  <div class="card">
+ 
+    
+  </div>
+  <div class="card">
+  
+    
+  </div>
+  <div class="card">
+ 
+   
+  </div>
+</div>
+</body>
+</html>

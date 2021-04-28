@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+ *{
+ 	margin: 2px;
+
+ }
+ .container{
+
+ 	width: 1080px;
+ 	margin: 0 auto;
+ 	position: relative;
+ }
+
+.hex {
+  margin-top: 30px;
+  width: 100px;
+  height: 60px;
+  background-color: #778899;
+  position: relative;
+  float: left;
+       }
+
+.hex:before {
+  content:  "";
+  width: 0; height: 0;
+  border-bottom: 30px solid #778899;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  position: absolute;
+  top: -30px;
+  display: block;
+}
+
+.hex:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -30px;
+  border-top: 30px solid #778899;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  display: block;
+
+ }
+ .top .hex:nth-child(1):before{
+ 	 border-bottom: 30px solid #882222;
+ }
+ .top .hex:nth-child(1):after{
+ 	 border-top: 30px solid #882222;
+ }
+ .top .hex:nth-child(1){
+ 	background-color: #882222;
+ }
+ .top .hex:nth-child(2):before{
+ 	 border-bottom: 30px solid #771010;
+ }
+ .top .hex:nth-child(2):after{
+ 	 border-top: 30px solid #771010;
+ }
+ .top .hex:nth-child(2){
+ 	background-color: #771010;
+ }
+ .top{
+  top: 0;
+ position: absolute;
+ left: 235px;
+ }
+ .mid .hex:nth-child(1):before{
+ 	 border-bottom: 30px solid #882222;
+ }
+ .mid .hex:nth-child(1):after{
+ 	 border-top: 30px solid #882222;
+ }
+ .mid .hex:nth-child(1){
+ 	 background-color:#882222;
+ }
+  .mid .hex:nth-child(2):before{
+ 	 border-bottom: 30px solid #771010;
+ }
+ .mid .hex:nth-child(2):after{
+ 	 border-top: 30px solid #771010;
+ }
+ .mid .hex:nth-child(2){
+ 	 background-color:#771010;
+ }
+   .mid .hex:nth-child(3):before{
+ 	 border-bottom: 30px solid #551010;
+ }
+ .mid .hex:nth-child(3):after{
+ 	 border-top: 30px solid #551010;
+ }
+ .mid .hex:nth-child(3){
+ 	 background-color:#551010;
+ }
+   .mid .hex:nth-child(4):before{
+ 	 border-bottom: 30px solid #331010;
+ }
+ .mid .hex:nth-child(4):after{
+ 	 border-top: 30px solid #331010;
+ }
+ .mid .hex:nth-child(4){
+ 	 background-color:#331010;
+ }
+ .mid{
+ 	position: absolute;
+ 	top: 95px;
+ 	left: 185px;
+ }
+  .double-mid .hex:nth-child(6n+1){
+ 	 background-color:#882222;
+ }
+  .double-mid .hex:nth-child(6n+1):before{
+ 	 border-bottom: 30px solid #882222;
+ }
+ .double-mid .hex:nth-child(6n+1):after{
+ 	 border-top: 30px solid #882222;
+ }
+   .double-mid .hex:nth-child(4n+2):before{
+ 	 border-bottom: 30px solid #771010;
+ }
+ .double-mid .hex:nth-child(4n+2):after{
+ 	 border-top: 30px solid #771010;
+ }
+ .double-mid .hex:nth-child(4n+2){
+ 	 background-color:#771010;
+ }
+    .double-mid .hex:nth-child(3):before{
+ 	 border-bottom: 30px solid #551010;
+ }
+ .double-mid .hex:nth-child(3):after{
+ 	 border-top: 30px solid #551010;
+ }
+ .double-mid .hex:nth-child(3){
+ 	 background-color:#551010;
+ }
+ .double-mid .hex:nth-child(4):before{
+ 	 border-bottom: 30px solid #331010;
+ }
+ .double-mid .hex:nth-child(4):after{
+ 	 border-top: 30px solid #331010;
+ }
+ .double-mid .hex:nth-child(4){
+ 	 background-color:#331010;
+ }
+ .double-mid .hex:nth-child(5):before{
+ 	 border-bottom: 30px solid #551010;
+ }
+ .double-mid .hex:nth-child(5):after{
+ 	 border-top: 30px solid #551010;
+ }
+ .double-mid .hex:nth-child(5){
+ 	 background-color:#551010;}
+ .double-mid{
+ 	position: absolute;
+ 	top: 190px;
+ 	left: 132px;
+ }
+ .double-bot .hex:nth-child(1):before{
+ 	 border-bottom: 30px solid #331010;
+ }
+ .double-bot .hex:nth-child(1):after{
+ 	 border-top: 30px solid #331010;
+ }
+ .double-bot .hex:nth-child(1){
+ 	 background-color:#331010;
+ }
+  .double-bot .hex:nth-child(2):before{
+ 	 border-bottom: 30px solid #551010;
+ }
+ .double-bot .hex:nth-child(2):after{
+ 	 border-top: 30px solid #551010;
+ }
+ .double-bot .hex:nth-child(2){
+ 	 background-color:#551010;}
+ 	  .double-bot .hex:nth-child(3):before{
+ 	 border-bottom: 30px solid #771010;
+ }
+ .double-bot .hex:nth-child(3):after{
+ 	 border-top: 30px solid #771010;
+ }
+ .double-bot .hex:nth-child(3){
+ 	 background-color:#771010;}
+.double-bot .hex:nth-child(4){
+ 	 background-color:#882222;
+ }
+  .double-bot .hex:nth-child(4):before{
+ 	 border-bottom: 30px solid #882222;
+ }
+ .double-bot .hex:nth-child(4):after{
+ 	 border-top: 30px solid #882222;
+ 	    }
+ 	    .double-bot .hex:nth-child(5){
+ 	 background-color:#994444;
+ }
+  .double-bot .hex:nth-child(5):before{
+ 	 border-bottom: 30px solid #994444;
+ }
+ .double-bot .hex:nth-child(5):after{
+ 	 border-top: 30px solid #994444;
+ 	    }
+ .double-bot{
+ 	position: absolute;
+ 	top: 285px;
+ 	left: 392px;
+ }
+ .bot .hex:nth-child(1){
+ 	 background-color:#882222;
+ }
+  .bot .hex:nth-child(1):before{
+ 	 border-bottom: 30px solid #882222;
+ }
+ .bot .hex:nth-child(1):after{
+ 	 border-top: 30px solid #882222;
+ 	    }
+ 	     .bot .hex:nth-child(2){
+ 	 background-color:#994444;
+ }
+  .bot .hex:nth-child(2):before{
+ 	 border-bottom: 30px solid #994444;
+ }
+ .bot .hex:nth-child(2):after{
+ 	 border-top: 30px solid #994444;
+ 	    }
+ .bot{
+ 	position: absolute;
+ 	top: 380px;
+ 	right: 215px;
+ }
+
+
+ h1{
+ 	position: absolute;
+text-transform: uppercase;
+font-size: 70px;
+color: #ffffff;
+text-shadow: 0 0 10px rgba(0,0,0,1.5);
+top: -170px;
+right: 260px;
+ }
+
+ h1:before{
+ 	position: absolute;
+ 	top: -100px;
+ 	left: -300px;
+ 	content: "this page is"
+ }
+ h1:after{
+ 	position: absolute;
+ 	left: 120px;
+ 	top: 80px;
+ 	content:"Hometask"
+
+ }
+
+ .back{
+  text-transform: uppercase;
+  position: fixed;
+  top: 95%;
+  line-height: 55px;
+ padding: 0 10px;
+border: 2px solid #ff3f40;
+display: inline-block;
+color: #ff3f40;
+ background-color: rgba(235, 56, 56, 0.5);
+border-radius: 6px;
+font-weight: bold;
+ }
+ .back a{
+    display: block;
+
+  font-family: arial;
+  text-decoration: none;
+color:#000;  }
+.back:hover{
+  background-color: #ff3f40;
+  color: white
+}
+	</style>
+</head>
+<body>
+    <div class="back"><a href="../css/layouts.html">Назад</a></div>
+
+	<div class="container"> 
+		 
+		<div class="top"> 
+<div class="hex"></div>	
+<div class="hex"></div>	
+ </div>
+ <div class="mid">
+<div class="hex"></div>	
+<div class="hex"></div>	
+<div class="hex"></div>	
+<div class="hex"></div>	
+ 	  </div>
+<div class="double-mid">
+<div class="hex"></div>	
+<div class="hex"></div>	
+<div class="hex"></div>	
+<div class="hex"></div>	
+<div class="hex"></div>	
+<div class="hex"></div>	
+<div class="hex"></div>	
+	</div>
+ <div class="double-bot">
+<div class="hex"></div>	
+<div class="hex"></div>	
+<div class="hex"></div>	
+<div class="hex"></div>	
+<div class="hex"></div>	
+ </div>
+ <div class="bot">
+<div class="hex"></div>	
+<div class="hex"></div>	
+ 	<h1>Your</h1>
+ </div>
+</div>
+</body>
+</html>
