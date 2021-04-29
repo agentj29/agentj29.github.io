@@ -26,12 +26,14 @@ header nav a{
 	text-decoration: none;
 	text-transform: uppercase; 
 	font-weight: bold;
+	transition-property:background-color, padding;
+ 	transition-duration:1s,1s;
+ 
 
 }
 header nav a:hover{
 	background-color: #ff3f40;
-
-
+	
 }
 
 
@@ -166,14 +168,21 @@ color: #c5c5c5;
  		text-align: center;
  	}
  	.nav a{
+ 		display: inline-block;
  	  color: #737373;
  	  text-decoration: none;
  	  text-transform: uppercase;
  	  font-weight: bold;
  	  margin: 0 50px;
+ 	  transition-property: color, transform;
+ 	   transition-duration: 0.5s,0.5s;
+ 	  
  	}
  	.nav a:hover{
+ 	 
  		color: #ff2d2d;
+ 	transform:scale(1.5);
+
  	}
 
  
@@ -186,7 +195,12 @@ color: #c5c5c5;
 	height: 300px;
 	background-color: #f5f0dd;
 		display: inline-block;
-	 	 
+	 	transition-property:transform;
+ 	transition-duration:0.7s; 
+}
+.card:hover{
+	border:1px solid #fff;
+	transform: scale(1.2);
 }
 .right{ 
  margin-right: 20px;
@@ -269,11 +283,18 @@ margin-right: -18px;
 	margin-bottom: 70px;
 }
 .menu a{
+	display: inline-block;
 	text-decoration: none;
 	color: #585858;
 	margin-right: 26px;
 	font-style: italic;
 	font-size: 18px;
+	transition-property:color, transform;
+ 	transition-duration:0.5s,0.5s;
+}
+.menu a:hover{
+	 		color: #ff2d2d;
+	 	 	transform:scale(1.1);
 }
 .all{width: 100%;
 padding-bottom: 105px;}
@@ -407,8 +428,13 @@ float: right;
  .descfoot a{
  	float: right;
  	margin: 10px;
-  
+   transition-property:transform;
+ 	transition-duration:0.5s;
 
+ }
+ .descfoot a:hover{
+ 
+transform: scale(1.1);
  }
 /*common*/
 .button{
@@ -420,7 +446,8 @@ color: #ff3f40;
 text-decoration: none;
 border-radius: 6px;
 font-weight: bold;
-
+transition-property:background-color,color,box-shadow;
+ 	transition-duration:0.5s,0.5s;
 }
 
  .button.last{
@@ -428,8 +455,10 @@ font-weight: bold;
   font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
+
  }
 .button:hover{
+box-shadow: 0 5px 10px rgba(0,0,0,0.5);
 	background-color: #ff3f40;
 	color: white
 }
@@ -460,7 +489,7 @@ height: 80px;
 font-size: 16px;
 padding-left: 20px;
 }
- 
+
  .input{
  	display: inline-block;
  	width: 335px;
@@ -503,10 +532,14 @@ padding-left: 20px;
  	font-size: 18px;
  	text-transform: uppercase;
  	color: #ff3f40;
+ 		transition-property: background-color,color,box-shadow;
+ 	transition-duration: 0.5s,0.5s,0.5s;
  }
  .submit:hover{
  	background-color: #ff3f40;
 	color: white;
+	cursor: pointer;
+		box-shadow: 0 5px 10px rgba(0,0,0,0.5);
  }
  .subone{
  	display: inline-block;
@@ -521,10 +554,14 @@ padding-left: 20px;
  	font-size: 18px;
  	text-transform: uppercase;
  	color: #ff3f40;
+ 	transition-property: background-color,color,box-shadow;
+ 	transition-duration: 0.5s,0.5s,0.5s;
  }
  .submitone:hover{
+ 	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
  	background-color: #ff3f40;
 	color: white;
+	cursor: pointer;
  }
 
 

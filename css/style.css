@@ -244,3 +244,106 @@
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   display: block;
+    }
+  .button{
+    text-align: center;
+    display: inline-block;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    line-height: 25px;
+    background-color: #ccc;
+    padding: 10px 20px;
+    transition-property:background-color,color,transform;
+    transition-duration: 1s,1s,1s;
+  }
+  .button:hover{
+  background-color:green;
+  color: white;
+  cursor: pointer;
+ 
+   }
+   .button.active{
+     margin-left: 50px;
+   }
+  .button.active:hover{
+
+    transform: scale(1.1);
+  }
+      
+ 
+
+
+      .preloader {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+left: 50px;
+bottom: 20px;
+}
+.preloader .x {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: green;
+  animation-timing-function: ease-in-out(0, 1, 1, 0);
+}
+.preloader .x:nth-child(1) {
+  left: 8px;
+  animation: preloader1 0.6s infinite;
+}
+.preloader .x:nth-child(2) {
+  left: 8px;
+  animation: preloader2 0.6s infinite;
+}
+.preloader .x:nth-child(3) {
+  left: 32px;
+  animation: preloader2 0.6s infinite;
+}
+.preloader .x:nth-child(4) {
+  left: 56px;
+  animation: preloader3 0.6s infinite;
+}
+.preloader .x:nth-child(5) {
+  left: 56px;
+  animation: preloader3 0.6s infinite;
+}
+@keyframes preloader1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes preloader2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+@keyframes preloader3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+@keyframes preloader4 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.endd a{
+ text-transform: uppercase;
+ font-size: 30px;
+}
